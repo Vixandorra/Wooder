@@ -1,0 +1,30 @@
+html, body {
+    font: normal 100% "ProximaNova-light",  "ProximaNova-semibold", "ProximaNova-bold", Calibri, Candara, sans-serif;
+    width: 100%;
+    height: auto;
+    color: #ffffff;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: inherit;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 88.28760%;
+}
+
