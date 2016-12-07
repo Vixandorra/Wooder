@@ -1,10 +1,276 @@
 main {
     display: flex;
     flex-direction: column;
-    position: relative;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    height: 1250px;
+    justify-content: space-around;
+    height: 2150px;
+    width: auto;
 }
+
+main .container {
+    height: 1480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main .furniture {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    height: 300px;
+}
+
+main .number_block {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 2.5em;
+}
+
+main .text_block {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 28%;
+    height: 200px;
+    margin: 52px auto;
+    color: #000000;
+}
+
+main .text_block h1 {
+    font-size: 2.5em;
+}
+
+main .text_block a {
+    border: none;
+    color: #000;
+    padding: 10px 0;
+}
+
+main .image_block {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 55%;
+    opacity: 0.8;
+}
+
+main .furniture .image_block {
+    background: url("../pic/furniture_pic.png")  no-repeat;
+    background-size: 160%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+main .decor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    height: 300px;
+}
+
+main .decor .image_block {
+    background: url("../pic/decor_pic.png") 10% 100% no-repeat;
+    background-size: 140%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+
+main .video {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    height: 480px;
+    width: 100%;
+}
+
+main .video .text_block {
+    justify-content: space-around;
+    align-content: center;
+    width: 60%;
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+
+main .video .text_block h1 {
+    letter-spacing: 1px;
+    font-size: 2.4em;
+}
+
+
+main .video .video_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 85%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+main .video .video_list .video_list_item {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main .video .video_list .video_list_item .video_image_circle {
+    display: flex;
+    flex-direction: row;
+    width: 192px; /* need to convert in %  */
+    height: 192px;
+    border: solid 0.5px lightgrey;
+    border-radius: 50%;
+}
+
+main .video .video_list .video_list_item h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+
+main .video .video_list .video_list_item .video_image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 172px; /* need to convert in %  */
+    height: 172px;
+    border: solid 10px white;
+    border-radius: 50%;
+}
+
+main .video .video_list .video_list_item:nth-child(1) .video_image {
+    background: url("../pic/background_video_1.png") 50% no-repeat;
+}
+
+
+main .video .video_list .video_list_item:nth-child(2) .video_image {
+    background: url("../pic/background_video_2.png") 50% no-repeat;
+}
+
+
+main .video .video_list .video_list_item:nth-child(3) .video_image {
+    background: url("../pic/background_video_3.png") 50% no-repeat;
+}
+
+main .video .video_list .video_list_item .video_image .play {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: url("../pic/triangle_play.png") 50% no-repeat, url("../pic/ellipse_video.png") no-repeat;
+    background-size: 40%, cover;
+    margin: auto;
+}
+
+
+main .full_video {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 655px;
+    width: 100%;
+    background: black;
+}
+
+
+main .full_video .video_image {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    height: 655px;
+    width: 100%;
+    background: url("../pic/player_big_pic.png") 95% 40% no-repeat,
+                url("../pic/wood_pile_background_10.png") 50% no-repeat;
+    background-size: 52%, cover;
+    opacity: 0.1;
+}
+
+
+main .full_video .container_80 {
+    display: flex;
+    flex-direction: column;
+    width: 81.4055637%;
+    height: 520px;
+    justify-content: space-between;
+    align-content: center;
+    margin: auto;
+    color: white;
+    border: 1px solid #bea67c;
+    border-top: none;
+    z-index: 100;
+}
+
+main .full_video .text_block {
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 50%; */
+    width: 43%;
+    height: 300px;
+    justify-content: space-between;
+    align-content: center;
+    margin: auto;
+    color: white;
+}
+
+main .full_video .text_block h1 {
+    color: #bea67c;
+}
+
+main .full_video .text_block .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 30px;
+    width: 60%;
+    margin: 0;
+}
+
+main .full_video .text_block .button a {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 10px;
+    width: 100%;
+    color: white;
+    margin: 10px auto;
+    padding: 0;
+    font-size: 1.3em;
+}
+
+
+main .full_video .text_block .button a::before {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 15px;
+    align-content: flex-end;
+    content: url("../pic/player_pic.png");
+}
+
+main .full_video .text_block .button:hover {
+    cursor: pointer !important;
+}
+
+
+
+
+
+
+
+
 
