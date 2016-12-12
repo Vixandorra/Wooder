@@ -1,16 +1,23 @@
 main {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 2150px;
+    justify-content: space-between;
+    height: 2072px;
     width: auto;
 }
 
 main .container {
-    height: 1480px;
+    height: 1330px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+main .container .block_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 780px;
 }
 
 main .furniture {
@@ -25,21 +32,52 @@ main .number_block {
     display: inline-flex;
     flex-direction: column;
     justify-content: flex-end;
-    font-size: 2.5em;
+    text-align: center;
+    font-size: 1.7em;
+    width: 11%;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
 }
+
+
+main .text_plus_rectangle {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 38%;
+}
+
+main .text_plus_rectangle .rectangle {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10%;
+    background: url("../pic/rectangle.png") 50% 45% no-repeat;
+    background-size: 100%;
+}
+
 
 main .text_block {
     display: inline-flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 28%;
-    height: 200px;
-    margin: 52px auto;
+    justify-content: space-between;
+    width: 80%;
+    height: 150px;
+    margin: 72px auto;
     color: #000000;
 }
 
+
 main .text_block h1 {
-    font-size: 2.5em;
+    font-size: 2.3em;
+    letter-spacing: 1px;
+}
+
+main .text_block div {
+    font-size: 0.7em;
+    width: 95%;
+    line-height: 1.5em;
+    height: 50px;
 }
 
 main .text_block a {
@@ -52,13 +90,15 @@ main .image_block {
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 55%;
+    width: 50.2%;
+    height: 285px;
     opacity: 0.8;
+    margin-right: 10px;
 }
 
 main .furniture .image_block {
-    background: url("../pic/furniture_pic.png")  no-repeat;
-    background-size: 160%;
+    background: url("../pic/furniture_pic.png") 100% 0% no-repeat;
+    background-size: 150%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
@@ -69,12 +109,24 @@ main .decor {
     justify-content: space-between;
     align-content: flex-start;
     height: 300px;
+    text-align: right;
+}
+
+main .decor .text_block div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 80%;
+    text-align: right;
+    height: 70px;
+    margin: 0 20%;
 }
 
 main .decor .image_block {
-    background: url("../pic/decor_pic.png") 10% 100% no-repeat;
-    background-size: 140%;
+    background: url("../pic/decor_pic.png") 100% 0% no-repeat;
+    background-size: 150%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-left: 10px;
 }
 
 
@@ -84,7 +136,7 @@ main .video {
     flex-direction: column;
     justify-content: space-between;
     align-content: center;
-    height: 480px;
+    height: 430px;
     width: 100%;
 }
 
@@ -100,8 +152,17 @@ main .video .text_block {
 
 
 main .video .text_block h1 {
+    font-size: 2.2em;
     letter-spacing: 1px;
-    font-size: 2.4em;
+}
+
+main .video .text_block div {
+    font-size: 0.7em;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 
@@ -110,8 +171,8 @@ main .video .video_list {
     flex-direction: row;
     justify-content: space-between;
     align-content: space-between;
-    width: 85%;
-    height: 300px;
+    width: 80%;
+    height: 270px;
     margin: 0 auto;
 }
 
@@ -135,6 +196,7 @@ main .video .video_list .video_list_item h1 {
     flex-direction: row;
     justify-content: center;
     text-align: center;
+    font-size: 0.8em;
 }
 
 
@@ -192,9 +254,9 @@ main .full_video .video_image {
     left: 0;
     height: 655px;
     width: 100%;
-    background: url("../pic/player_big_pic.png") 95% 40% no-repeat,
+    background: url("../pic/player_big_pic.png") 90% 50% no-repeat,
                 url("../pic/wood_pile_background_10.png") 50% no-repeat;
-    background-size: 52%, cover;
+    background-size: 46%, cover;
     opacity: 0.1;
 }
 
@@ -209,7 +271,6 @@ main .full_video .container_80 {
     margin: auto;
     color: white;
     border: 1px solid #bea67c;
-    border-top: none;
     z-index: 100;
 }
 
@@ -219,24 +280,34 @@ main .full_video .text_block {
     /* position: absolute; */
     /* left: 50%; */
     /* top: 50%; */
-    width: 43%;
-    height: 300px;
+    width: 33%;
+    height: 265px;
     justify-content: space-between;
     align-content: center;
-    margin: auto;
+    margin: auto 25%;
     color: white;
 }
 
 main .full_video .text_block h1 {
     color: #bea67c;
+    font-size: 2.1em;
+    letter-spacing: 1.2px;
+    margin-top: 20px;
+}
+
+.full_video .text_block div {
+    font-size: 0.7em;
+    width: 80%;
+    line-height: 1.5em;
+    height: 65px;
 }
 
 main .full_video .text_block .button {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 30px;
-    width: 60%;
+    height: 18px;
+    width: 51%;
     margin: 0;
 }
 
@@ -247,9 +318,9 @@ main .full_video .text_block .button a {
     height: 10px;
     width: 100%;
     color: white;
-    margin: 10px auto;
     padding: 0;
-    font-size: 1.3em;
+    margin: 5px auto;
+    font-size: 1.1em;
 }
 
 
@@ -257,7 +328,8 @@ main .full_video .text_block .button a::before {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5px 15px;
+    padding: 5px 5px;
+    margin: 5px;
     align-content: flex-end;
     content: url("../pic/player_pic.png");
 }

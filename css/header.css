@@ -4,8 +4,8 @@ header {
     flex-direction: row;
     background-color: black;
     width: 100%;
-    height: 733px;
-    margin-bottom: 50px;
+    height: 742px;
+    margin-bottom: 65px;
 }
 
 
@@ -66,7 +66,7 @@ header .container .mid {
     align-content: stretch;
     justify-content: space-between;
     width: 100%;
-    height: 69.5%;
+    height: 69%;
 }
 
 header .container .mid .slider_number {
@@ -192,7 +192,7 @@ header .container .logo_block .logo {
     letter-spacing: 15px;
     color: #bea67c;
     margin: 0;
-    margin-bottom: 0.4em;
+    margin-bottom: 0.35em;
 
 }
 
@@ -201,6 +201,7 @@ header .container .logo_block .logo {
     /* float: left; */
     flex-direction: column;
     justify-content: center;
+    /* align-content: center; */
     text-align: center;
     width: 40%;
     border: 2px solid white;
@@ -215,11 +216,15 @@ header .container .logo_block .logo {
 .container .button a {
     width: 100%;
     height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 
 .container .button a::after {
-    padding-left: 20px;
+    padding-left: 10px;
     content: url("../pic/long_arrow.png");
 }
 
@@ -288,6 +293,7 @@ header .container .label .rotate {
     height: 10px;
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
+    padding: 215px 0 0 20px;
 }
 
 
